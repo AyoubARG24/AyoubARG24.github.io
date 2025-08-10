@@ -3,49 +3,73 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayoub Amargoul</title>
+    <title>Ayoub Amargoul — Pursuit of Excellence</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
+            font-family: 'Georgia', serif;
+            max-width: 900px;
             margin: 0 auto;
             padding: 2rem;
-            background-color: #f8f8f8;
-            color: #333;
+            background: linear-gradient(#fdfdfd, #f5f5f5);
+            color: #222;
+            line-height: 1.6;
         }
         header {
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
         h1 {
-            margin-bottom: 0.2rem;
+            font-size: 2.5rem;
+            margin-bottom: 0.3rem;
         }
         nav a {
-            margin: 0 10px;
+            margin: 0 12px;
             text-decoration: none;
-            color: #0066cc;
+            font-weight: bold;
+            color: #0044aa;
         }
         nav a:hover {
             text-decoration: underline;
         }
         section {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
+        }
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        blockquote {
+            font-style: italic;
+            margin: 1.5rem 0;
+            padding-left: 1rem;
+            border-left: 4px solid #ccc;
+            color: #555;
         }
         footer {
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: #777;
-            margin-top: 3rem;
+            margin-top: 4rem;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Ayoub Amargoul</h1>
-        <p>Engineering Student in Geometric Sciences & Topographical Engineering — IAV Hassan II</p>
+        <p>Engineering Student in Geometics & Surveing Engineering — IAV Hassan II</p>
         <nav>
             <a href="#about">About</a>
+            <a href="#research">Research</a>
             <a href="#projects">Projects</a>
+            <a href="#philosophy">Philosophy</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -53,32 +77,70 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Hello! I'm Ayoub Amargoul, a first-year engineering student passionate about 
+            I am a first-year engineering student whose curiosity thrives at the crossroads of 
             mathematics, physics, AI, economics, and geospatial sciences.  
-            I enjoy working with Python, LaTeX, AutoCAD, QGIS, and exploring applications of 
-            remote sensing in environmental monitoring.  
-            I am deeply inspired by scientists like Alain Aspect, Terence Tao, and Richard Feynman.
+            From the elegance of Richard Feynman’s explanations to the revolutionary proofs of Terence Tao and Alain Aspect’s experiments on quantum entanglement, I see science not merely as knowledge, but as the *art of truth*.
+        </p>
+        <p>
+            Tools I work with include Python, LaTeX, AutoCAD, QGIS, and geodetic instruments.  
+            I believe every equation is a poem — Kalman filter formula
+            
+            \[ \hat{x}{k|k} = \hat{x}{k|k-1} + K_k \big(z_k - H_k \hat{x}_{k|k-1}\big) \]
+            
+            to Schrödinger's equation  in quantum mechanics:
+            
+            \[ i\hbar\,\frac{\partial}{\partial t}\Psi(\mathbf{r},t)
+               = -\dfrac{\hbar^2}{2m}\,\nabla^2 \Psi(\mathbf{r},t) + V(\mathbf{r},t)\,\Psi(\mathbf{r},t) \]
+            
         </p>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+    <section id="research">
+        <h2>Research Interests</h2>
         <ul>
-            <li><strong>Forest Fire Detection & Tracking</strong> — Using satellite imagery and NDVI analysis for environmental monitoring.</li>
-            <li><strong>PageRank & Random Walk Modeling</strong> — Applying graph theory to digital networks.</li>
-            <li><strong>Geodetic & Topographic Surveying</strong> — Practical fieldwork with total stations, leveling instruments, and drones.</li>
-            <li><strong>Mathematical Modelling</strong> — Bernoulli percolation for simulating fire propagation.</li>
+            <li>**Remote Sensing & Environmental Monitoring** — wildfire detection, land cover classification, and change detection.</li>
+            <li>**Geodesy & Ellipsoid Models** — precision positioning, GPS/GNSS, and mathematical modeling of Earth's shape.</li>
+            <li>**Mathematical Physics** — stochastic processes, Bernoulli percolation:
+                \[
+                    P_{\text{connected}} = 1 - (1-p)^n
+                \]
+                applied to fire propagation.
+            </li>
+            <li>**Artificial Intelligence** — statistical physics approaches to AI, inspired by Geoffrey Hinton’s ideas.</li>
         </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Highlighted Projects</h2>
+        <ul>
+            <li><strong>Forest Fire Detection & Tracking</strong> — NDVI and satellite time-series to detect and monitor fire spread in near real-time.</li>
+            <li><strong>Percolation-based Fire Modeling</strong> — modeling wildfire spread as a stochastic network process using Bernoulli percolation theory.</li>
+            <li><strong>PageRank & Random Walk Modeling</strong> — simulating ranking algorithms for social networks and information retrieval.</li>
+            <li><strong>Geodetic Surveying</strong> — fieldwork with total stations, leveling, and drone photogrammetry for mapping and infrastructure projects.</li>
+        </ul>
+    </section>
+
+    <section id="philosophy">
+        <h2>Philosophy</h2>
+        <blockquote>
+            "Excellence is not a skill, it is an attitude." — Ralph Marston
+        </blockquote>
+        <p>
+            For me, excellence is why we live.  
+            Every skill I learn, every proof I study, and every project I undertake is a step toward 
+            mastering both precision and beauty. I embrace the <em>carpe diem</em> spirit while 
+            ensuring my actions contribute to a future where science serves humanity.
+        </p>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:ayoub.amargoul@gmail.com">ayoub.amargoul@gmail.com</a></p>
+        <p>Email: <a href="mailto:ayoub.amargoul@iav.ac.ma">ayoub.amargoul@iav.ac.ma</a></p>
         <p>GitHub: <a href="https://github.com/ayoubamargoul" target="_blank">github.com/ayoubamargoul</a></p>
     </section>
 
     <footer>
-        &copy; 2025 Ayoub Amargoul — Hosted on GitHub Pages
+        &copy; 2025 Ayoub Amargoul — Pursuit of Excellence | Hosted on GitHub Pages
     </footer>
 </body>
 </html>
